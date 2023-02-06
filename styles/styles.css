@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-seaweed: #177e89ff;
+  --clr-eagle-green: #084c61ff;
+  --clr-red: #db3a34ff;
+  --clr-yellow: #ffc857ff;
+  --clr-jet: #323031ff;
+  --clr-black: #1f1b1b;
+  --clr-white: #ffffff;
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/images/password-img.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  color: 
+}
+.container {
+  width: 450px;
+}
+
+.pass-length {
+  width: 50px;
+}
+
+.output {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(156, 14, 14);
+}
+.form-inputs {
+  width: 100%;
+  display: flex;
+  margin: 20px 5px;
+  gap: 5px;
+  color: #ede9e9;
+}
+.check-box {
+  cursor: pointer;
+}
+.char{
+  
+}
+.btn-copy,
+.submit-btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--clr-eagle-green);
+  color: #ede9e9;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+.submit-btn:hover,
+.btn-copy:hover {
+  background-color: var(--clr-jet);
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .container {
+    width: 250px;
+  }
+  .output {
+    width: 12rem;
+  }
+  .pas-length {
+    width: 2rem;
+    padding: 3px 3px;
+    text-align: center;
+  }
+  .password-label {
+    display: flex;
+    align-items: center;
+  }
+}
